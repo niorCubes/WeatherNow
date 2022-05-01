@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist\output.css">
+    <title>WeatherNow</title>
+</head>
+<body class="font-montserrat text-white">
+
+    <!-- Main Container -->
+    <div class="grid grid-cols-12">
+        
+        <!-- main content -->
+        <div class="relative col-span-12 xl:col-span-9 bg-gray-800 h-[600px] xl:h-screen">
+            <!-- video -->
+            <video autoplay muted loop src="assets/rain.mp4" class="w-full h-full absolute object-cover brightness-75 blur-sm"></video>
+
+            <!-- contents -->
+            <div class="z-10 relative h-[600px] xl:h-screen">
+                <!-- top -->
+                <div class="border-b-2 border-zinc-700 h-[80%] p-10 xl:p-16 flex justify-between">
+
+                    <!-- logo -->
+                    <div class="flex flex-col justify-between">
+                        <a href="#" class="font-semibold text-lg xl:text-xl">
+                            WeatherNow ®
+                        </a>
+
+                        <!-- Temparature report -->
+                        <div class="flex items-end space-x-5">
+                            <div>
+                                <h1 class="text-7xl xl:text-9xl font-extrabold">14°</h1>
+                            </div>
+                            
+                            <div>
+                                <p class="text-xl xl:text-3xl font-bold">It's a rainy day,</p>
+                                <p class="text-xl xl:text-3xl font-light text-gray-300">Don't forget your umbrella.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- menu button -->
+                    <div>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 xl:h-11 xl:w-11" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- bottom -->
+                <div class="h-[10%] p-10 xl:p-24 md:flex justify-between items-center font-medium text-sm lg:text-lg">
+                    <div class="mb-3 md:mb-0">
+                        <p>11:04 AM - Monday, 04 apr 2022</p>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <p>Caloocan, Philippines</p>
+                        <button class="py-1 px-3 border-[2px] border-white hover:bg-white hover:text-gray-800 transition-all">Change</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- side bar -->
+        <div class="col-span-12 xl:col-span-3 bg-zinc-800 z-10 xl:h-screen overflow-y-auto">
+
+            <!-- city -->
+            <div class="border-b-2 border-zinc-700 p-10 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <p class="font-thin text-sm">City</p>
+                    <p class="font-bold">Caloocan</p>
+                </div>
+
+                <div>
+                    <button class="py-1 px-3 border-[2px] border-white hover:bg-white hover:text-gray-800 transition-all">Change</button>
+                </div>
+            </div>
+
+            <!-- Weather Details -->
+            <div class="border-b-2 border-zinc-700 p-10">
+                <h1 class="font-bold mb-5">Weather Details</h1>
+
+                <!-- Cloudy -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Cloudy</p>
+                    <p class="text-gray-200 font-light">93%</p>
+                </div>
+
+                <!-- Precipitation -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Precipitation</p>
+                    <p class="text-gray-200 font-light">90%</p>
+                </div>
+
+                <!-- Humidity -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Humidity</p>
+                    <p class="text-gray-200 font-light">65%</p>
+                </div>
+
+                <!-- Wind -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Wind</p>
+                    <p class="text-gray-200 font-light">5 km/h</p>
+                </div>
+            </div>
+
+            <!-- Temparature -->
+            <div class="border-b-2 border-zinc-700 p-10">
+                <div class="">
+                    <h1 class="font-bold mb-5">Temparature</h1>
+                </div>
+
+                <div class="flex items-center space-x-6">
+
+                    <div class="">
+                        <h1 class="font-bold text-2xl">12°</h1>
+                        <p class="text-gray-200 font-light">06:00 AM</p>
+                    </div>
+
+                    <div class="">
+                        <h1 class="font-bold text-2xl">14°</h1>
+                        <p class="text-gray-200 font-light">10:00 AM</p>
+                    </div>
+
+                    <div class="">
+                        <h1 class="font-bold text-2xl">13°</h1>
+                        <p class="text-gray-200 font-light">02:00 PM</p>
+                    </div>
+
+                    <div class="">
+                        <h1 class="font-bold text-2xl">13°</h1>
+                        <p class="text-gray-200 font-light">06:00 PM</p>
+                    </div>
+
+                    <div class="">
+                        <h1 class="font-bold text-2xl">12°</h1>
+                        <p class="text-gray-200 font-light">10:00 PM</p>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <!-- Next Days -->
+            <div class="border-b-2 border-zinc-700 p-10">
+                <h1 class="font-bold mb-5">Next Days</h1>
+
+                <!-- Tuesday -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Tuesday</p>
+                    <p class="text-gray-200 font-light">13°</p>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Wednesday</p>
+                    <p class="text-gray-200 font-light">14°</p>
+                </div>
+
+                <!-- Thursday -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Thursday</p>
+                    <p class="text-gray-200 font-light">16°</p>
+                </div>
+
+                <!-- Friday -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Friday</p>
+                    <p class="text-gray-200 font-light">14°</p>
+                </div>
+
+                <!-- Saturday -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Saturday</p>
+                    <p class="text-gray-200 font-light">15°</p>
+                </div>
+
+                <!-- Sunday -->
+                <div class="text-gray-400 flex justify-between items-center mb-3">
+                    <p>Sunday</p>
+                    <p class="text-gray-200 font-light">12°</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
